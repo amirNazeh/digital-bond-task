@@ -1,0 +1,43 @@
+:root {
+  --primary-color: #ab0202;
+  --secondary-color: #a29c9c;
+}
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  position: relative;
+  text-align: center;
+}
+.section-title::before {
+  content: "";
+  position: absolute;
+  width: 9%;
+  height: 5px;
+  bottom: 0px;
+
+  background: linear-gradient(
+    90deg,
+    var(--secondary-color) 0%,
+    rgba(208, 56, 94, 0) 100%
+  );
+}
+.gradient-button {
+  background: linear-gradient(90deg, var(--primary-color) 0%, #d0385e 100%);
+  padding-inline: 2rem;
+  padding-block: 4px;
+
+  border-radius: 48px;
+
+  color: #ffffff;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-inline-end: 20px;
+  border: none;
+  transition: all 0.3s ease;
+}
+body {
+  overflow-x: hidden;
+}

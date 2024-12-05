@@ -1,0 +1,23 @@
+<div class="mx-2">
+  <div class="text-end">
+    <img class="right-quote" src="../../../../../assets/img/quote-right.png" />
+  </div>
+  <h3 class="section-title mb-5" appScrollAnimation="animate__bounceIn">
+    Reviews
+  </h3>
+
+  <p-carousel
+    [value]="dataList"
+    [numVisible]="3"
+    [numScroll]="1"
+    [circular]="true"
+    [autoplayInterval]="4500"
+    [responsiveOptions]="responsiveOptions"
+  >
+    <ng-template let-item pTemplate="item">
+      <img [src]="item" class="w-100 px-2" />
+    </ng-template>
+  </p-carousel>
+
+  <img class="left-quote" src="../../../../../assets/img/quote-left.png" />
+</div>

@@ -1,0 +1,30 @@
+.line {
+  width: 2px;
+  height: 9rem;
+  padding: 0;
+  margin-block: 15px;
+  background: rgba(186, 186, 186, 1);
+}
+i {
+  font-size: 4rem;
+}
+.name {
+  color: rgba(145, 145, 145, 1);
+  font-family: Rubik;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.number {
+  color: rgba(145, 145, 145, 1);
+  font-weight: 700;
+  font-size: 2rem;
+}
+@media (max-width: 576px) {
+  i {
+    font-size: 2rem;
+  }
+  .name {
+    font-size: 1rem;
+  }
+}

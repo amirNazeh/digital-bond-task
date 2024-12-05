@@ -1,0 +1,68 @@
+.section-container {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background-image: url(../../../../../assets/img/finalhero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 58vw;
+  background-blend-mode: color;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.waves {
+  position: absolute;
+  width: 100%;
+  bottom: -1px;
+}
+.section-bg {
+  width: 100%;
+}
+
+.descriptions {
+  position: absolute;
+  top: 52%;
+  transform: translateY(-50%);
+
+  right: 10%;
+  left: 10%;
+
+  text-align: center;
+}
+
+.arrow {
+  width: 6%;
+  animation: pluse 1s infinite;
+}
+@keyframes pluse {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  width: 30%;
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .section-container {
+    height: 350px;
+  }
+
+  .section-bg {
+    height: 330px;
+  }
+  .logo {
+    width: 50%;
+  }
+}

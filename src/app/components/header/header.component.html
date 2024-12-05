@@ -1,0 +1,45 @@
+<nav class="navbar">
+  <img class="logo" src="../../../assets/img/light-logo.webp" routerLink="/" />
+
+  <i #menu_icon class="bi bi-list d-block d-sm-none menu-icon"></i>
+
+  <ul class="tabs d-sm-flex" #header>
+    <div class="d-block d-sm-none close-icon" #close_icon>
+      <i class="bi bi-x-circle fs-3"></i>
+    </div>
+    <img
+      class="logo d-block d-sm-none m-auto"
+      src="../../../assets/img/light-logo.webp"
+      routerLink="/"
+    />
+
+    <li>
+      <a class="tab-item active" #tab_item href="#home"> Home </a>
+    </li>
+
+    <div class="line"></div>
+    <li>
+      <a href="#About_Us" class="tab-item" #tab_item> About us </a>
+    </li>
+    <div class="line"></div>
+    <li>
+      <a href="#contact" class="tab-item" #tab_item>contact</a>
+    </li>
+    <div class="line"></div>
+
+    <div class="d-none d-sm-flex gap-2 gap-sm-3 social">
+      <a
+        target="_blank"
+        href="https://www.facebook.com/@upcareer.CV/?mibextid=ZbWKwL"
+      >
+        <i class="bi bi-facebook fs-3"></i>
+      </a>
+      <a target="_blank" herf="https://www.linkedin.com/company/digital-bond">
+        <i class="bi bi-linkedin fs-3"></i>
+      </a>
+      <a href="https://wa.me/+201021551322" target="_blank">
+        <i class="bi bi-whatsapp fs-3"></i>
+      </a>
+    </div>
+  </ul>
+</nav>

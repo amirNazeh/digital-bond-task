@@ -1,0 +1,129 @@
+<section class="row contact-container" id="contact">
+  <h3 class="section-title mb-5" appScrollAnimation="animate__bounceIn">
+    Contact Us
+  </h3>
+  <div class="d-block d-md-none">
+    <h1>Let’s Get In Touch, How Can We Help?</h1>
+  </div>
+
+  <div
+    class="col-12 col-md-6 col-lg-7 left-container order-md-1 order-2"
+    appScrollAnimation="animate__fadeInLeftBig"
+  >
+    <div class="d-none d-md-block">
+      <h1>Let’s Get In Touch, How Can We Help?</h1>
+    </div>
+
+    <img
+      width="100%"
+      class="d-none d-md-block contact-img"
+      src="./assets/img/contact.png"
+    />
+
+    <div class="d-flex justify-content-between align-items-center">
+      <div>
+        <i class="bi bi-envelope mt-3">
+          <div class="mx-2 d-inline">{{ "Bonder@digitalbondmena.com" }}</div>
+        </i>
+
+        <br />
+
+        <i class="bi bi-telephone"
+          ><div dir="ltr" class="mx-2 d-inline">+201021551322</div>
+        </i>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="col-12 col-md-6 col-lg-5 p-0 order-md-2 order-1"
+    appScrollAnimation="animate__fadeInRightBig"
+  >
+    <div class="form-container">
+      <form #form="ngForm">
+        <label>Full Name</label>
+        <div class="input-container mt-1">
+          <i class="bi bi-person fs-4 left-icon"></i>
+          <input
+            type="text"
+            name="fullName"
+            ngModel
+            #fullName="ngModel"
+            required
+            placeholder="Enter your name"
+          />
+        </div>
+        <div
+          *ngIf="
+            fullName.invalid &&
+            (fullName.dirty || fullName.touched || form.submitted)
+          "
+        >
+          <div class="error-message" *ngIf="fullName.errors?.['required']">
+            Full Name is required
+          </div>
+        </div>
+        <div class="mt-3">
+          <label>Phone Number </label>
+          <div class="input-container mt-1">
+            <i class="bi bi-telephone fs-5 left-icon"></i>
+            <input
+              type="text"
+              name="phone"
+              ngModel
+              #phone="ngModel"
+              required
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <div
+            *ngIf="
+              phone.invalid && (phone.dirty || phone.touched || form.submitted)
+            "
+          >
+            <div class="error-message" *ngIf="phone.errors?.['required']">
+              Phone Number is required.
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <label>Email</label>
+          <div class="input-container mt-1">
+            <i class="bi bi-envelope fs-5 left-icon"></i>
+            <input
+              type="email"
+              name="email"
+              ngModel
+              #email="ngModel"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div *ngIf="email.touched && email.dirty">
+            <div class="error-message" *ngIf="email.errors?.['email']">
+              Invalid email format.
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3">
+          <label>Message</label>
+          <div class="input-container mt-1">
+            <i class="bi bi-chat-left-text fs-5 left-icon area-icon"></i>
+
+            <textarea
+              type="text"
+              name="message"
+              ngModel
+              placeholder="Enter your message"
+            ></textarea>
+          </div>
+        </div>
+        <div>
+          <button type="submit" class="w-100 gradient-button py-2">
+            "Send"
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

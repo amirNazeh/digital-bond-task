@@ -1,0 +1,38 @@
+::ng-deep .p-carousel-next,
+::ng-deep .p-carousel-prev {
+  color: rgb(103, 98, 98);
+  border-radius: 50%;
+  box-shadow: 0px 1px 11px 0px #0808091a;
+  direction: ltr;
+  background: white;
+}
+
+::ng-deep .p-carousel-next:hover,
+::ng-deep .p-carousel-prev:hover {
+  background-color: rgba(239, 238, 238, 0.7);
+}
+::ng-deep .p-carousel {
+  position: relative;
+  z-index: 1;
+}
+.right-quote {
+  width: 25%;
+  margin-bottom: -200px;
+  animation: scaleUpDown 2s infinite;
+  transition: transform 0.3s ease-in-out;
+}
+.left-quote {
+  width: 25%;
+  margin-top: -200px;
+  animation: scaleUpDown 2s infinite;
+  transition: transform 0.3s ease-in-out;
+}
+@keyframes scaleUpDown {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
